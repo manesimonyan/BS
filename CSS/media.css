@@ -1,0 +1,91 @@
+
+@media only screen and (max-width: 768px){
+	header .phonemenu{
+		display: block;
+		z-index: 9;
+	}
+	header #nav ul{
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	header #nav ul li{
+		display: block;
+		width: 100%;
+		box-shadow: 0 4px 10px #fff;
+	}
+	header #nav{
+		transition: .3s all;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,.7);
+        height: 100%;
+        transform: translateX(-100%);
+	}
+	header #nav li{
+		margin: 15px 0;
+	}
+	
+	header #nav.active{
+		transform: translateX(0);
+	}
+
+	header .active{
+    	display: block;
+    }
+    .bg5 .container-fluid .row .col-3 a img{
+        width: 120px;
+        height: 100px;
+    }
+	
+	.bg6 .container-fluid{
+		flex-wrap: wrap;
+		justify-content: center!important;
+	}
+    
+	.bg6 .container-fluid .vl{
+		display: none;
+	} 
+
+	.bg6 .container-fluid .teamItem{
+		width: 30%;
+		text-align: center;
+	}
+
+	.bg6 div .socicons{
+		margin: 0 auto;
+	}
+	footer .row{
+		flex-wrap: wrap;
+
+	}
+
+}
+
+@media only screen and (max-width: 425px){
+	.bg1 .container p{
+        font-size: 32px;
+	}
+	.bg2 .container {
+		flex-direction: column;
+    }
+    .bg2 .container section{
+    	margin-bottom: 50px;
+
+    }
+    .bg6 .container-fluid{
+    	flex-direction: column;
+        align-items: center;
+    }
+    .bg6 .container-fluid .teamItem{
+    	margin-bottom: 50px;
+    }
+
+}

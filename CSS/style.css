@@ -1,0 +1,597 @@
+body{
+	margin: 0;
+}
+
+body.over{
+    overflow:hidden;
+}
+
+header{
+	display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+header .phonemenu{
+    display: none;
+}
+
+header div ul li{
+	list-style-type: none;
+	display: inline-block;
+	 margin-right: 20px;
+}
+header div ul li a{
+	color: white;
+	border-top: 5px solid transparent;
+	transition: .5s all;
+    list-style-type: none;
+}
+header div ul li a:hover{
+	border-top: 5px solid #56bd54;
+	color: white;
+	text-decoration: none;
+
+}
+header input{
+	border-radius: 10px;
+}
+header .search{
+	position: relative;
+	border: none;
+    outline: none;
+}
+header .search i{
+	position: absolute;
+	left: 150px;
+    top: 7px;
+    color: #9E9E9E;
+}
+.bg1{
+	background: url("../img/bg.jpg") no-repeat;
+	height: 90vh;
+	background-size: cover;
+	background-position: center; 
+}
+.bg1 div div{
+	position: relative;
+}
+.bg1 div div .scroll{
+    position: absolute;
+    bottom: 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background: #fdf2f2a6;
+    font-size: 16px;
+    cursor: pointer;
+}
+.bg1 div div .scroll:hover{
+	background: #b7adad9c;
+}
+
+.bg1 div div .work{
+	width: 166px;
+    height: 46px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    background: #56bd54;
+    cursor: pointer;
+}
+.bg1 div div .work:hover{
+	background: #269e26c2;
+}
+.bg1 div div p{
+    height: 100px;
+    font-size: 58px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.work {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bg2 .text{
+	text-align: center;
+    color: #00000080;
+    padding-top: 20px;
+}
+.bg2 .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+.bg2 .text h3{
+	letter-spacing: 10px;
+
+}
+.bg2 div section .icon{
+	text-align: center;
+    font-size: 100px;
+    color: #56bd54;
+}
+.bg2 div section h2{
+    text-align: center;
+    color: #0000008a;
+}
+.bg2 div section p{
+	padding-left: 20px;
+    padding-right: 20px;
+    color: #0000008a;
+    font-size: 12px;
+    text-align: center;
+}
+.bg2 div section button{
+	width: 166px;
+    height: 46px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    background: #56bd54;
+    cursor: pointer;
+}
+.bg2 div section button:hover{
+	background: #269e26c2;
+}
+.bg3{
+    background: #56bd54;
+}
+.bg3 .text{
+    text-align: center;
+    color: #00000080;
+    padding-top: 20px;
+}
+.bg3 .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+.bg3 .text h3{
+    letter-spacing: 10px;
+
+}
+.bg3 .buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.bg3 .buttons .bt1{
+    width: 136px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #56bd54 ;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background: #2c792a;
+}
+
+.bg3 .buttons .bt2{
+    width: 100px;
+    border: 1px solid #56bd54 ;
+    outline: none;
+    background: white;
+    color: #56bd54;
+    cursor: pointer;
+}
+.bg3 .buttons .bt3{
+    width: 100px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #56bd54 ;
+    outline: none;
+    background: white;
+    color: #56bd54;
+    cursor: pointer;
+}
+
+.bg3 img{
+    width: 100%;
+}
+.bg3 .view button{
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    color: white;
+    background: #2c792a;
+    font-size: 15px;
+    width: 150px;
+     margin-bottom: 20px;
+}
+.bg3 .view button:hover{
+    background: #48a048;
+}
+.bg4 .text{
+    text-align: center;
+    color: #00000080;
+    padding-top: 20px;
+}
+.bg4 .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+.bg4 .text h3{
+    letter-spacing: 10px;
+
+}
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\201C";
+    float: left;
+    margin-right: 10px;
+    font-size: 30px; 
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+.bg5 .text{
+    text-align: center;
+    color: #00000080;
+    padding-top: 20px;
+}
+.bg5 img{
+    width: 100%;
+}
+.bg5 .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+.bg5 .text h3{
+    letter-spacing: 10px;
+
+}
+.bg5 .container-fluid .row .col-3 a img{
+    width: 150px;
+    height: 100px;
+    filter: drop-shadow(0px 5px 4px gray);
+}
+
+.col-lg-3{
+    opacity: 0;
+    perspective: 800px;
+}
+
+.scale-up-ver-center {
+            animation: scale-up-ver-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+            animation-fill-mode: forwards;
+}
+
+@keyframes scale-up-ver-center {
+  0% {
+            transform: translateY(20px) rotateY(90deg);
+            opacity: 0;
+  }
+  100% {
+            transform: translateY(0) rotateY(0);
+            opacity: 1
+  }
+}
+
+.bg6 .text{
+    text-align: center;
+    color: #00000080;
+    padding-top: 20px;
+}
+.bg6 .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+.bg6 .text h3{
+    letter-spacing: 10px;
+}
+
+.vl{
+    height: 70px;
+    width: 2px;
+    background:#00000070;;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bg6 div .teamItem p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+.bg6 div .socicons{
+    text-align: center;
+    font-size: 19px;
+    background: #ffffffa3;
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 10px;
+}
+.socicons span:nth-child(1){
+    color:red;
+}
+.socicons span:nth-child(2){
+    color:blue;
+}
+.socicons span:nth-child(3){
+    color: #0b82e0;
+}
+.bg6 .end{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    background: #159a15;
+}
+.bg6 .end button{
+    color: white;
+    background: #18cc18;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 9px;
+    width: 140px;
+    box-shadow: -1px 4px 8px 1px #0b480b;
+
+}
+.bg6 .end button:hover{
+    background: #56da22;
+}
+footer{
+    background: #000000c2;
+}
+footer .text{
+    text-align: center;
+    color: #ffffffb0;
+    padding-top: 20px;
+}
+footer .text hr{
+    width: 65px;
+    height: 2px;
+    background: #00000075;
+}
+footer .text h3{
+    letter-spacing: 10px;
+
+}
+footer div section img{
+    float: left;
+    margin-right: 10px;
+}
+footer section .socicons{
+    text-align: center;
+    font-size: 19px;
+    background: #ffffffa3;
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 35%;
+}
+.footer-blc{
+    margin-bottom: 20px;
+}
+.footer-blc p{
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.footer-blc button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px !important;
+}
+footer .col-12{
+    color:#ffffffb0;
+    font-size: 18px;
+}
+footer .reg{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+}
+footer .reg input[type="name"]{
+    border-radius: 5px 5px 0px 0px;
+    border: none;
+    background: #00000057;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+footer .reg input[type="e-mail"]{
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    background: #00000057;
+}
+footer .reg textarea{
+    border: none;
+    height: 104px;
+    padding-top: 3px;
+    background: #00000057;
+}
+footer .reg input[type="name"]:hover{
+    background: #ffffffbd;
+    outline: none;
+}
+footer .reg input[type="e-mail"]:hover{
+    background: #ffffffbd;
+    outline: none;
+}
+footer .reg textarea:hover{
+    background: #ffffffbd;
+    outline: none;
+}
+footer .reg button{
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #159a15;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+footer .reg button:hover{
+    background: #4cbb4c;
+}
+hr{
+    border:none;
+}
+footer .social{
+    background: #00000054;
+    color: #000000eb !important;
+    padding-bottom: 20px;
+}
+
+
